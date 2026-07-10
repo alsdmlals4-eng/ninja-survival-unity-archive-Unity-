@@ -36,10 +36,8 @@ Thumbs.db
 *.aab
 *.exe
 *.app
-*.zip
 *.7z
 *.rar
 
 # Note:
-# If you intentionally want to archive a Unity ZIP, upload it through GitHub Releases
-# or remove the *.zip rule for that specific commit.
+# ZIP files are allowed in this archive repository because the Unity source may be uploaded as a ZIP snapshot.
