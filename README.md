@@ -10,9 +10,12 @@
 
 ## 현재 상태
 
-GitHub API 기준으로 이 저장소는 초기화 직후 상태이며, Unity ZIP 또는 Unity 프로젝트 파일은 아직 커밋된 것으로 확인되지 않는다.
+Unity ZIP 업로드가 확인되었다.
 
-GitHub 웹에서 파일을 업로드할 때는 파일 선택 후 반드시 **Commit changes**를 눌러야 저장소에 반영된다.
+- 확인 커밋: `99c241a979649b1f0a7574c2d39e11ca73e67cdc`
+- 파일명: `ninza.zip`
+
+현재 ChatGPT/GitHub 커넥터에서는 ZIP 바이너리 내부를 직접 풀어 분석할 수 없었다. 다음 단계는 Codex 또는 로컬 환경에서 ZIP을 풀고 `Assets/`, `Packages/`, `ProjectSettings/` 구조를 확인하는 것이다.
 
 ## 권장 업로드 방식
 
@@ -36,6 +39,8 @@ Logs/
 UserSettings/
 .vs/
 ```
+
+ZIP 스냅샷 보존이 목적이라면 ZIP 파일도 허용한다. 단, 이후 Codex가 분석하려면 ZIP을 풀어 실제 Unity 폴더 구조를 확인해야 한다.
 
 ## Godot 전환 원칙
 
