@@ -10,12 +10,14 @@
 
 ## 현재 상태
 
-Unity ZIP 업로드가 확인되었다.
+Unity ZIP 업로드 및 아카이브 인벤토리 확인이 완료되었다. 이 저장소는 **ARCHIVE_ONLY**이며 실제 제품 정본이나 구현 대상으로 사용하지 않는다.
 
-- 확인 커밋: `99c241a979649b1f0a7574c2d39e11ca73e67cdc`
+- 감사 기준 커밋: `a6499f0e62175609147bd2d66b6c48b16cb2331e`
 - 파일명: `ninza.zip`
+- SHA-256: `72e08c6d552ea5dfd25175082844cf360dd40eb3bf53544f229aae2887f20491`
+- 인벤토리/증거 한계: [`ARCHIVE_MANIFEST.md`](ARCHIVE_MANIFEST.md)
 
-현재 ChatGPT/GitHub 커넥터에서는 ZIP 바이너리 내부를 직접 풀어 분석할 수 없었다. 다음 단계는 Codex 또는 로컬 환경에서 ZIP을 풀고 `Assets/`, `Packages/`, `ProjectSettings/` 구조를 확인하는 것이다.
+2026-08-24 감사에서 ZIP 중앙 디렉터리로 `Assets/`, `Packages/`, `ProjectSettings/` 루트를 확인했다. 이것은 파일 보존/검사 가능성만 뜻하며 Unity import/build/run, 시각·사운드 품질, 플레이 가능성, 기기 검증, 자산 권리를 뜻하지 않는다. 해당 상태는 모두 `NOT_RUN`이다.
 
 ## 권장 업로드 방식
 
